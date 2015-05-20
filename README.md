@@ -11,3 +11,10 @@ Develop a script called run_analysis.E to complete the following:
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 Please see the CodeBook for more details about the data, the variables and variable transformation.
+
+## How to run the code:
+1. Download and unzip the files into your local drive
+2. use setwd() to point to the working directory you saved the files
+3. run the R script to generate tidy_data.txt in your working directory
+
+## Packages needed : reshape2
