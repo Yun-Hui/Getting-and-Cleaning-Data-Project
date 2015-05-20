@@ -40,7 +40,7 @@ The following files are available for the train and test data. Their description
 Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ## Steps of run_analysis.R
-0. install reshape2 package
+0. Install reshape2 package
 1. Get the activity lables used for Y files
 2. Get colum names used for X files
 3. Combine all data (subject,test and train) and assign the column names to the files
