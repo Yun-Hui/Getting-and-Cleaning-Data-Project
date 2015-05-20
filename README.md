@@ -17,4 +17,5 @@ Please see the CodeBook for more details about the data, the variables and varia
 2. use setwd() to point to the working directory you saved the files
 3. run the R script to generate tidy_data.txt in your working directory
 
-## Packages needed : reshape2
+## Dependency:
+You need to install reshape2
