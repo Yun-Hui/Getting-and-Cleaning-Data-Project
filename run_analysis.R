@@ -60,19 +60,9 @@ names(subject_test)<-"Subject_ID"
 traindata <- cbind(subject_train, Y_train, X_train)
 testdata <- cbind(subject_test,Y_test, X_test)
 alldata<-rbind(traindata,testdata)
-
 mergeData<-merge(alldata,activity_labels,by.x="Activity_ID",by.y="Activity_ID",all=TRUE)
 
-# 4. Appropriately labels the data set with descriptive variable names. 
-
-##mean_var <- grep("+mean", features, value=TRUE)
-##std_var <- grep("+std", features, value=TRUE)
-##inc_measure_var<-c(mean_var,std_var)
-##inc_id_var<-c("Subject_ID","Act_Name")
-##inc_var<-c(inc_id_var,inc_measure_var)
-##final<- alldata[,inc_var]
-
-# 6. Create tidy dataset
+# generte the value and ccreate tidy dataset
 
 melted <- melt(mergeData, id=c("Subject_ID","Activity_ID","Act_Name"),measure.vars=measure_var)
 
