@@ -62,7 +62,7 @@ testdata <- cbind(subject_test,Y_test, X_test)
 alldata<-rbind(traindata,testdata)
 mergeData<-merge(alldata,activity_labels,by.x="Activity_ID",by.y="Activity_ID",all=TRUE)
 
-# generte the value and ccreate tidy dataset
+# 4. generte the value and ccreate tidy dataset
 
 melted <- melt(mergeData, id=c("Subject_ID","Activity_ID","Act_Name"),measure.vars=measure_var)
 
