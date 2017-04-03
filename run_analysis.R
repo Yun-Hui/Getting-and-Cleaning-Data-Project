@@ -19,7 +19,7 @@ colnames(activity_labels)<-c("Activity_ID","Act_Name")
 ##Extract only the mean and standard deviation for each measurement
 features <- read.table("features.txt")[,2]
 extract_features <- grepl("mean|std", features)
-measure_var <- grep("mean|std", features, value=TRUE)
+measure_var <- grep("mean\\(\\)|std\\(\\)", features, value=TRUE)
 
 
 # 3. Combine all data (subject,test and train) and assign the column names
