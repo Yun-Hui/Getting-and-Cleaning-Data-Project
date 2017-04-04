@@ -3,7 +3,7 @@
 The codebook describes the variables, the data, and any data transformations.
 
 ## Data Set 
-- the tidy dataset contains 180 observation and 81 variables.The variables inclue subject id, act_name and measurement variable indicating mean and standard diviation that come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ.
+- the tidy dataset contains 180 observation and 68 variables.The variables inclue subject id, act_name and measurement variable indicating mean and standard diviation that come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ.
 - To better understand those variables, you cann see "feature_info.txt" in the Data file(zip) listed below.
 
 ## Background
